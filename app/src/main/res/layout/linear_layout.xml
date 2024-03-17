@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="NextActivityOnClick"
+        android:text="Constraint layout"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
+            android:backgroundTint="#86D725"
+            android:gravity="left|center"
+            android:text="Главная"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/search" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/notifications" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#86D725"
+            android:gravity="left|center"
+            android:text="Новости"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/down" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#86D725"
+            android:gravity="left|center"
+            android:text="Для вас"
+            android:textColor="#807c7d"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#86D725"
+            android:gravity="left|center"
+            android:text="Актуальное"
+            android:textColor="#807c7d"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/add_circle" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_green" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_orange" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_red" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_blue" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_green" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_orange" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_red" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/account_circle_white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:gravity="top|center"
+                                android:text="Имя" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/create"
+                    android:text="Создать запись"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/play" />
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/notification_add" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/account_circle_red" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Название сообщества"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="41 минуту назад"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settings_dot" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:backgroundTint="#86D725"
+                        android:gravity="left|center"
+                        android:text="Описание записи"
+                        android:textColor="#807c7d"
+                        android:textSize="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/account_circle_red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Автор"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="1,1K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/message_comment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="18"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/reply" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="650"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/views" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="73,9K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#3B3B3B">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/account_circle_blue" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Название сообщества"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="31 минуту назад"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settings_dot" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:backgroundTint="#86D725"
+                        android:gravity="left|center"
+                        android:text="Описание записи"
+                        android:textColor="#807c7d"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/account_circle_red" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Автор"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="134K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/message_comment" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="363"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/reply" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="1377"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/views" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="718,9K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#3B3B3B">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/account_circle_white" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Название сообщества"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="сегодня в 8:01"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settings_dot" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:backgroundTint="#86D725"
+                        android:gravity="left|center"
+                        android:text="Описание записи"
+                        android:textColor="#807c7d"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/account_circle_green" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Автор"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="143,3K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/message_comment" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="1478"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/reply" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="315"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/views" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="13,94K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#3B3B3B">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/account_circle_red" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Название сообщества"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="1 час назад"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settings_dot" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:backgroundTint="#86D725"
+                        android:gravity="left|center"
+                        android:text="Описание записи"
+                        android:textColor="#807c7d"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/account_circle_blue" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Автор"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="113,1K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/message_comment" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="1543"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/reply" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="3128"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/views" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="531,2K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#3B3B3B">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/account_circle_orange" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Название сообщества"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="2 часа назад"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settings_dot" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:backgroundTint="#86D725"
+                        android:gravity="left|center"
+                        android:text="Описание записи"
+                        android:textColor="#807c7d"
+                        android:textSize="14dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/account_circle_red" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="Автор"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/like" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="12,3K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/message_comment" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="184"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/reply" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="1233"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_weight="1">
+
+                        </TextView>
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/views" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:backgroundTint="#86D725"
+                            android:gravity="left|center"
+                            android:text="831,9K"
+                            android:textColor="#807c7d"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/news" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="top|center"
+                android:textSize="12dp"
+                android:text="Новости" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/widgets" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="top|center"
+                android:textSize="12dp"
+                android:text="Сервисы" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/message" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="top|center"
+                android:textSize="12dp"
+                android:text="Мессенджер" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/clips" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="top|center"
+                android:textSize="12dp"
+                android:text="Клипы" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></TextView>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/person" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="top|center"
+                android:textSize="12dp"
+                android:text="Меню" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
